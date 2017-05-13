@@ -1,0 +1,5 @@
+1,asd,??,na mert?,200,1,Review
+2,egy cim,ez meg valami más,nem tudom,400,1,Planning
+3,még mindig cím,ez meg nem az,még mindig nem tudom,200,1,Planning
+5,módosítom,ezt is módosítom,meg ezt is,900,5.5,Done
+7,asda,sdoiv¤ sdfuiv¤,¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤,700,4h,TODO

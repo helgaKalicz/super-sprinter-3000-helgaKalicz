@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Sprinter 3000</title>
+    </head>
+    <body>
+        <h2>User Story Manager</h2>
+        <table border='2', style='width:1000px;table-layout:fixed'>
+            <tr>
+                <th style='width:5%'>{{ 'ID' }}</th>
+                <th style='width:15%'>{{ 'Story Title' }}</th>
+                <th style='width:25%'>{{ 'User Story' }}</th>
+                <th style='width:25%'>{{ 'Acceptance criteria' }}</th>
+                <th style='width:5%'>{{ 'Value' }}</th>
+                <th style='width:5%'>{{ 'Time' }}</th>
+                <th style='width:10%'>{{ 'Status' }}</th>
+                <th style='width:10%', colspan='2'>{{ '2 buttons' }}</th>
+            </tr>
+            {% for files in file_list %}
+            <tr>
+                {% for item in files %}
+                <td align='middle' style='overflow:hidden'>{{ item }}</td>
+                {% endfor %}
+                <td align='middle'>
+                    <form method=GET><a href= '/story/{{ files[0] }}'><img src='https://cdn3.iconfinder.com/data/icons/school-solid-icons-vol-2/96/098-512.png' height='30' width='25'></a></form>
+                </td>
+                <td align='middle'>
+                    <form action='/story/{{ files[0] }}/delete' method=POST><input type='image' src='https://cdn2.iconfinder.com/data/icons/large-svg-icons/512/recycle_bin_trash_full_garbage-512.png' height='30' width='30'></form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p><button><a href='/story'>Add new story</a></button></p>
+    </body>
+</html>
