@@ -15,15 +15,15 @@
         {% endif %}
         <form method=POST>
             <p>Story Title<br />
-                <textarea type='text' rows='1' cols='20' name='story_title'>{{ story[1] if story else "a" }}</textarea></p>
+                <textarea type='text' rows='1' cols='20' name='story_title'>{{ story[1] if story else "" }}</textarea></p>
             <p>User Story<br />
-                <textarea type='text' rows='3' cols='20' name='user_story'>{{ story[2] if story else "a" }}</textarea></p>
+                <textarea type='text' rows='3' cols='20' name='user_story'>{{ story[2] if story else "" }}</textarea></p>
             <p>Acceptance criteria<br />
-                <textarea type='text' rows='3' cols='20' name='acceptance_criteria'>{{ story[3] if story else "a" }}</textarea></p>
+                <textarea type='text' rows='3' cols='20' name='acceptance_criteria'>{{ story[3] if story else "" }}</textarea></p>
             <p>Business Value<br />
-                <input type='number' min='100' max='1500' step='100' name='business_value' value='{{ story[4] if story else 100 }}'></p>
+                <input type='number' min='100' max='1500' step='100' name='business_value' value='{{ story[4] if story else "" }}'></p>
             <p>Estimation (h)<br />
-                <input type='number' min='0.5' max='40' step='0.5' name='estimation_time' value='{{ story[5] if story else 0.5 }}'></p>
+                <input type='number' min='0.5' max='40' step='0.5' name='estimation_time' value='{{ story[5] if story else "" }}'></p>
             <p>Status<br />
                 <select name='status'>
                     <option value='Planning' {{ 'selected' if story[6] == 'Planning' else '' }}>Planning</option>

@@ -58,3 +58,10 @@ def valid_time(time):
         return False if time < 0.5 or time > 40 or time % 0.5 != 0 else True
     except:
         return False
+
+
+def correct_time(time):
+    '''
+    Returns the correct form of the estimation time.
+    '''
+    return int(time) if int(float(time)) == float(time) else float(time)

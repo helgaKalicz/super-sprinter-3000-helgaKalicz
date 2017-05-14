@@ -2,4 +2,14 @@
 2,egy cim,ez meg valami más,nem tudom,400,1,Planning
 3,még mindig cím,ez meg nem az,még mindig nem tudom,200,1,Planning
 5,módosítom,ezt is módosítom,meg ezt is,900,5.5,Done
-7,asda,sdoiv¤ sdfuiv¤,¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤,700,4h,TODO
+7,asda,sdoiv¤ sdfuiv¤,¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤,700,4,TODO
+8,Macskafarka,beszámolókészítő segédprogram Készítette: iemeretlen,3,500,0.5,Planning
+9,:(,nem jó,de miért nem??,200,0.5,Planning
+12,hiba,csinálj hibát,ne tudj hibát csinálni,00100,0010,Planning
+13,hiba,javítva,legalábbis az egyik. a másik biztosan nem¤ de egyik sem olyan biztos,400,0010,In progress
+14,hiba 2.0,a hiba kijavítva,a másik hiba talán félig kijavítva¤ meglátjuk,100,20.0,Planning
+16,fura eredmény,mit csináljak?,nyilván kitörlöm,500,0.5,Planning
+17,sodvih0,weonoeifnwenio,ioojoi,500,20.0,Planning
+18,a,a,a,500,40,Planning
+19,a,a,a,100,10,Planning
+20,a,a,a,100,0.5,Planning

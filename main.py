@@ -32,8 +32,8 @@ def add_new_story():
             file.write(str(functions.convert_string(request.form['story_title'])) + ',')
             file.write(str(functions.convert_string(request.form['user_story'])) + ',')
             file.write(str(functions.convert_string(request.form['acceptance_criteria'])) + ',')
-            file.write(str(request.form['business_value']) + ',')
-            file.write(str(request.form['estimation_time']) + 'h,')
+            file.write(str(int(request.form['business_value'])) + ',')
+            file.write(str(functions.correct_time(request.form['estimation_time'])) + ',')
             file.write(str(request.form['status']) + '\n')
         return redirect('/list')
     else:
@@ -66,8 +66,8 @@ def modify_story(story_id):
                 story[1] = str(functions.convert_string(request.form['story_title']))
                 story[2] = str(functions.convert_string(request.form['user_story']))
                 story[3] = str(functions.convert_string(request.form['acceptance_criteria']))
-                story[4] = str(request.form['business_value'])
-                story[5] = str(request.form['estimation_time'])
+                story[4] = str(int(request.form['business_value']))
+                story[5] = str(functions.correct_time(request.form['estimation_time']))
                 story[6] = str(request.form['status'])
                 break
         functions.write_file('result.txt', story_list)
